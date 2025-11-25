@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sizing units</title>
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+            }
+
+            html {
+                  font-size: 10px;
+            }
+
+            /*root value */
+            .box {
+                  box-sizing: border-box;
+                  /* width: 1920px; */
+                  width: 80vw;
+                  height: 10vh;
+                  margin: 23px auto;
+                  border: 2px solid;
+                  background-color: aquamarine;
+                  text-align: center;
+            }
+
+            .container {
+                  box-sizing: border-box;
+                  /* width: 1920px; */
+                  width: 80vw;
+                  height: 50vh;
+                  min-height: 80vh;
+                  margin: auto;
+                  border: 2px solid;
+                  background-color: aquamarine;
+                  text-align: center;
+                  font-size: 15px;
+                  overflow: scroll;
+            }
+
+            .container .incontainer {
+                  font-size: 2rem;
+                  width: 50%;
+                  border: 2px solid rebeccapurple;
+            }
+
+            .container .incontainer p {
+                  font-size: 2rem;
+                  width: 50%;
+                  border: 2px solid red;
+            }
+
+            .mycont {
+                  box-sizing: border-box;
+                  width: 100vmin;
+                  margin: 23px auto;
+                  border: 2px solid;
+                  background-color: red;
+                  text-align: center;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="box">
+            This is heading
+      </div>
+      <div class="container">
+            This is contaning data
+            <div class="incontainer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates excepturi
+                  repudiandae, similique nemo at ipsam reprehenderit quam, id beatae, dolore rerum cumque facere ad
+                  natus dignissimos optio nisi officiis placeat deleniti atque officia modi fugit! Tenetur optio
+                  expedita, error numquam neque molestias distinctio commodi nulla! Quos culpa ut aliquam itaque ipsam,
+                  possimus fugit rem hic nisi ducimus quas labore reprehenderit.
+                  <p>
+                        para in div
+                  </p>
+            </div>
+      </div>
+      <div class="mycont">
+            Vmin vmax concept
+      </div>
+</body>
+
+</html>

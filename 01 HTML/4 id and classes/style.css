@@ -1,0 +1,17 @@
+/* . = class */
+.red{
+      color: red;
+}
+
+.bg-yellow{
+background-color: yellow;
+}
+
+/* # = Id */
+#firstdiv{
+      background-color: purple;
+}
+#seconddiv{
+      background-color: black;
+      color: wheat;
+}

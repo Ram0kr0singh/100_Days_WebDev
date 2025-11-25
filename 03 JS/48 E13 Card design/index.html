@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        .card {
+            border: 2px solid black;
+            width: 900px;
+            /* height: 300px; */
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image img {
+            width: 200px;
+            padding: 4px 4px;
+        }
+
+        .text h1,
+        p {
+            padding: 2px 0;
+        }
+
+        .capsul {
+            padding: 2px;
+            border-radius: 4px;
+            background-color: rgba(104, 97, 97, 0.893);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            z-index: 10;
+            bottom: 12px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDxR2Iy74ubFQvvf2uP0BepdJ_GNw"
+                    alt="">
+                <div class="capsul">20:40</div>
+            </div>
+            <div class="text">
+                <h1>Sigma Web Development Course - Tutorial #77</h1>
+                <p>Code with harry . 727K views . 2 Months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

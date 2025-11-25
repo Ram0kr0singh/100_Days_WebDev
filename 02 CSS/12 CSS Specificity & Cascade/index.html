@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Specificity & Cascade</title>
+      <style>
+            h1 {
+                  background-color: brown;
+            }
+
+            h1.cpurple {
+                  background-color: darkslategrey;
+            }
+
+            /* 10+1=11 */
+            .red {
+                  background-color: red;
+            }
+
+            .cblue {
+                  background-color: blue;
+            }
+
+            .cgreen {
+                  background-color: green;
+            }
+
+            .cpurple {
+                  background-color: purple;
+            }
+
+            /* atrribute selector */
+            [data-x=a] {
+                  background-color: aquamarine;
+            }
+
+            /* 1.Position- Last one */
+            /*2.specicity Inline selectors> Id selectors> class or attribute selectors> Elementselector > universal selectors */
+            /* 3.Origin
+            4.important- !important */
+
+            /* Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+Then, add up the values of all the parts in the selector. */
+      </style>
+</head>
+
+<body>
+      <h1 class="red cblue cgreen cpurple" data-x="a">
+            This is heading
+      </h1>
+</body>
+
+</html>

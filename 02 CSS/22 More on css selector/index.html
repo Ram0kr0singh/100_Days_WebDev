@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>More on css selector</title>
+      <style>
+            .boxes::before {
+                  content: "Ram is good (using before,content)";
+            }
+
+            .boxes::after {
+                  content: "Ram is good (using after,content)";
+            }
+
+            .box:nth-child(2)::before {
+                  content: "Ram is good (using after,content)";
+                  color: white;
+            }
+
+            /* .box:first-child{
+                  background-color: rebeccapurple;
+            } */
+
+            /* .box:nth-child(2){
+                  background-color: cyan;
+            } */
+
+            /* .boxes * {
+                  background-color: greenyellow;
+            } */
+
+            [data-color="primary"] {
+                  padding-left: 30px;
+            }
+
+            .p,
+            .a,
+            .box,
+            [data-color="primary"] {
+                  margin: 10px;
+                  /* padding: 5px; */
+                  border: 2px solid blue;
+            }
+
+            .box:nth-child(even) {
+                  background-color: brown;
+            }
+
+            ::selection {
+                  background-color: black;
+                  color: aqua;
+            }
+
+            .box::first-letter {
+                  font-size: 50px;
+                  color: coral;
+            }
+
+            input::placeholder {
+                  background-color: yellow;
+                  color: black;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="boxes">
+            <div class="box">This is box1</div>
+            <div class="box" data-color="primary">This is box2</div>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit assumenda, culpa eum
+                  iure fugit aspernatur dolorum quam eveniet error? Provident, ex quos facere laborum vero molestiae!
+                  Laboriosam, sit rerum.</div>
+            <div class="box">
+                  <p>This is a paragraph</p>
+            </div>
+            <input type="text" placeholder="ENTER TEXT">
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+div{
+      background-color: red;
+}
+/* Class selector */
+.blue{
+      background-color: blue;
+}
+/* Id selectors */
+#green{
+      background-color: green;
+}
+/* Child selector (directly under div)*/ 
+div > p{
+      color: blue;
+      background-color: yellow;
+}
+/* Decendent selector (under any div) */
+div p {
+      background-color: orange;
+}
+/* Universal selector */
+*{
+      margin:0;
+      padding:0;;
+}
+/* Psuedo Selector (changes color of a tag after visiting*/
+a:visited{
+      color: rgb(210, 39, 68);
+}
+a:link{
+      color: black;
+}
+a:active{
+      background-color: blue;
+}
+a:hover{
+      background-color: purple;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Flexbox</title>
+      <style>
+            .container {
+                  height: 70vh;
+                  border: 3px solid red;
+                  padding: 10px;
+                  display: flex;
+                  /* align-items: center; */
+                  /*for 1 content  */
+                  /* align-content: center; */
+                  /* flex-direction: row;
+                  flex-wrap: wrap; */
+                  /* justify-content: center; */
+                  /* flex-flow: row wrap; */
+                  /* row-gap: 5px;
+                  column-gap: 30px; */
+                  /* gap: 5px 30px; */
+            }
+
+            .box {
+                  /* flex-grow: 1; */
+                  height: 40px;
+                  width: 40px;
+                  background-color: purple;
+                  margin: 2px;
+                  border: 1px solid black;
+                  color: white;
+                  text-align: center;
+                  flex-shrink: 2;
+            }
+
+            .box1 {
+                  /* flex-grow: 5; */
+                  background-color: red;
+                  align-self: flex-end;
+            }
+
+            /* .order-1 {
+                  order: 1;
+                  background-color: blue;
+            }
+
+            .order-2 {
+                  order: 2;
+                  background-color: red;
+            }
+
+            .order-3 {
+                  order: 3;
+            } */
+      </style>
+</head>
+
+<body>
+      <div class="container">
+            <div class="box box1 order-2">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box order-1">100</div>
+      </div>
+</body>
+
+</html>

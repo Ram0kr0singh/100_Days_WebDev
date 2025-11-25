@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey i'm a box</div>
+        <div class="box">Hey i'm a box</div>
+    </div>
+    <script>
+        // let div = document.createElement('div');
+        // div.innerHTML = "Hey i'm a box <b>again</b>"
+        // div.setAttribute("class", "created")
+        // document.querySelector(".container").append(div)
+        // document.querySelector(".container").prepend(div)
+        // document.querySelector(".container").replaceWith(div)
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin","New HTML Added afterbegin")
+        cont.insertAdjacentHTML("afterend","New HTML Added afterend")
+        cont.insertAdjacentHTML("beforebegin","New HTML Added beforebegin")
+        cont.insertAdjacentHTML("beforeend","New HTML Added beforeend")
+    </script>
+</body>
+</html>

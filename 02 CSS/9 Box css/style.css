@@ -1,0 +1,28 @@
+*box {
+      margin: 0;
+      padding: 0;
+}
+
+.box {
+      background-color: aqua;
+      padding: 10px;
+}
+
+.box1 {
+      color: red;
+      margin: 5px;
+      border: 2px solid blue;
+      /* Only content */
+      height: 200px;
+      box-sizing: border-box;
+                  }
+
+.box2 {
+      color: green;
+      /* Margin collpase only higer value */
+      margin: 10px;
+      border: 2px solid purple;
+      /* Only content */
+      height: 200px;
+      box-sizing: border-box;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Multi color nav bar</title>
+      <style>
+            :root {
+                  --bgcolor: yellow;
+                  --bgcolor2: blue;
+                  --bgcolor3: cyan;
+            }
+
+            * {
+                  margin: 0;
+                  padding: 0;
+            }
+
+            .nav {
+                  background-color: var(--bgcolor);
+            }
+
+            @media screen and (min-width:800px) {
+                  .nav {
+                        background-color: var(--bgcolor2);
+                  }
+            }
+
+            @media screen and (max-width:455px) {
+                  .nav {
+                        background-color: var(--bgcolor3);
+                  }
+            }
+
+            ul {
+                  display: flex;
+            }
+
+            ul li {
+                  width: 30vw;
+                  list-style-type: none;
+                  padding: 20px;
+                  /* margin:10px; */
+                  border: 1px solid black;
+                  text-align: center;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="nav">
+            <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+            </ul>
+      </div>
+</body>
+
+</html>

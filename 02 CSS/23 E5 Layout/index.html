@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Basic Layout Challenge</title>
+      <style>
+            * {
+                  margin: 0;
+                  padding: 0;
+            }
+
+            header {
+
+                  top: 00;
+                  position: sticky;
+            }
+
+            main {
+                  background-color: black;
+                  padding: 40px;
+            }
+
+            .nav {
+                  height: 10vh;
+                  width: 100vw;
+                  background-color: pink;
+                  /* position: absolute; */
+            }
+
+            .footer {
+                  height: 10vh;
+                  width: 100vw;
+                  background-color: red;
+            }
+
+            .container {
+                  height: 40vh;
+                  width: 85vw;
+                  background-color: brown;
+                  margin: 2vh auto;
+                  /* margin-top: 1vh; */
+                  text-align: center;
+                  padding: 2vh 5vw;
+            }
+
+            .box {
+                  height: 34vh;
+                  width: 40vw;
+                  border: 2px solid black;
+                  margin: 4px;
+                  padding: auto;
+                  display: inline-block;
+            }
+
+            .box1 {
+                  background-color: palevioletred;
+                  border: 1px solid palevioletred;
+            }
+
+            .box2 {
+                  background-color: cyan;
+                  border: 1px solid cyan;
+            }
+
+            .circle {
+                  border-radius: 20px;
+                  background-color: orange;
+                  border: 2px solid black;
+                  position: fixed;
+                  height: 30px;
+                  width: 30px;
+                  right: 10px;
+                  bottom: 20px;
+            }
+
+            .text-box {
+                  color: white;
+                  text-align: center;
+                  border: 2px solid white;
+                  border-radius: 20px;
+                  height: 50vh;
+                  width: 70vw;
+                  background-color: black;
+                  margin: 0px auto;
+                  padding: 5vw;
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <div class="nav"></div>
+      </header>
+      <main>
+            <div class="container">
+                  <div class="box box1"></div>
+                  <div class="box box2"></div>
+            </div>
+            <div class="circle"></div>
+            <div class="text-box">Welcome to this sigma webdev Express</div>
+      </main>
+</body>
+<footer>
+      <div class="footer"></div>
+</footer>
+
+</html>
