@@ -1,7 +1,10 @@
 // console.log("Hi")
 // console.log('Whi si this?')
-
-let age = 105;
+// var a = prompt("Enter an age")
+// let a = age
+var a = prompt("Enter a number")
+console.log("your number is" + a)
+let age = a;
 if (age < 18) {
     console.log("you can drive");
 }
@@ -12,8 +15,8 @@ else {
     console.log("YOU CAN'T DRIVE");
 }
 
-a=3
-b=4
+a = 3
+b = 4
 
-let c= a>b ?(a-b) : (a+b);
-let d= a<b ?(a-b) : (a+b);
+let c = a > b ? (a - b) : (a + b);
+let d = a < b ? (a - b) : (a + b);
