@@ -2,9 +2,12 @@
 // console.log('Whi si this?')
 // var a = prompt("Enter an age")
 // let a = age
-var a = prompt("Enter a number")
-console.log("your number is" + a)
-let age = a;
+const prompt = require("prompt-sync")();
+
+var a = prompt("Enter a number ");
+console.log("your number is" + a);
+
+let age = Number(a);
 if (age < 18) {
     console.log("you can drive");
 }
