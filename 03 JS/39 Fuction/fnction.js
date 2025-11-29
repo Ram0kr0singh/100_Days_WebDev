@@ -8,8 +8,8 @@
 // title("Ram")
 // title("Zoro")
 
-function sum(a, b, c=1) {
-    return a + b
+function sum(a, b, c=10) {
+    return a + b + c
 }
 
 result1 = sum(1, 5)
