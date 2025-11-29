@@ -4,8 +4,17 @@
 // let a = age
 // If you're running this in Node, prompt() will crash because it's a browser function.
 
-const prompt = require("prompt-sync")();
+// const prompt = require("prompt-sync")();
 // npm install prompt-sync
+alert("Welcome to the page")
+var isTrue = confirm("Are you sure")
+if(isTrue){
+    console.log("i guess so")
+}
+else{
+    console.log("i guess not")
+}
+
 var a = prompt("Enter a number ");
 console.log("your number is" + a);
 
