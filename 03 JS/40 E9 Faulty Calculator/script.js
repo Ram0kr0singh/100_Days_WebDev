@@ -44,24 +44,24 @@ console.log(random);
 let a = parseFloat(prompt('Enter First number : '));
 let b = prompt('Enter Operation : ');
 let c =
- parseFloat(prompt('Enter Second number : '));
+    parseFloat(prompt('Enter Second number : '));
 
-if (random > 0.1){
+if (random > 0.1) {
     // correct evaluation
-    if (b === '+') {console.log('Addition is ', a + c);}
-    else if (b === '-') {console.log('substraction is ', a - c);}
-    else if (b === '*') {console.log('multiplication is ', a * c);}
-    else if (b === '/') {console.log('division is ', a / c);}
+    if (b === '+') { console.log('Addition is ', a + c); }
+    else if (b === '-') { console.log('substraction is ', a - c); }
+    else if (b === '*') { console.log('multiplication is ', a * c); }
+    else if (b === '/') { console.log('division is ', a / c); }
 }
-else{
+else {
     // wrong evaluation
-    if (b === '+') {console.log('Addition is ', a - c);}
-    else if (b === '-') {console.log('substraction is ', a / c);}
-    else if (b === '*') {console.log('multiplication is ', a + c);}
-    else if (b === '/') {console.log('division is ', a ** c);}
+    if (b === '+') { console.log('Addition is ', a - c); }
+    else if (b === '-') { console.log('substraction is ', a / c); }
+    else if (b === '*') { console.log('multiplication is ', a + c); }
+    else if (b === '/') { console.log('division is ', a ** c); }
 }
 
-    // console.log{'Addition is ', (a-b)}
-    // console.log{'substrac is ', (a/b)}
-    // console.log{'multiply is ', (a+b)}
-    // console.log{'division is ', (a**b)}
+// console.log{'Addition is ', (a-b)}
+// console.log{'substrac is ', (a/b)}
+// console.log{'multiply is ', (a+b)}
+// console.log{'division is ', (a**b)}
