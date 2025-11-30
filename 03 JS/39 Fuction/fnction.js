@@ -19,3 +19,9 @@ result3 = sum(3, 5)
 console.log(result1)
 console.log(result2)
 console.log(result3)
+
+const fuct1 = (x,y)=>{
+    return x*y
+}
+
+console.log(fuct1(10,30))
