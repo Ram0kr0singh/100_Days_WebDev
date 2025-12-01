@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="box">Hey i'm a box</div>
+        <div class="box red">Hey i'm a box</div>
         <div class="box">Hey i'm a box</div>
     </div>
     <script>
@@ -23,6 +23,10 @@
         cont.insertAdjacentHTML("afterend","New HTML Added afterend")
         cont.insertAdjacentHTML("beforebegin","New HTML Added beforebegin")
         cont.insertAdjacentHTML("beforeend","New HTML Added beforeend")
+
+        // document.querySelector(".container").classname
+        // document.querySelector(".container").classlist
+        document.querySelector(".container").classList.add.("red")
     </script>
 </body>
 </html>
